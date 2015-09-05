@@ -11,15 +11,12 @@ import Parse
 
 
 
-class CustomLoginViewController: UIViewController {
+class CustomLoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameField: UITextField!
-
     @IBOutlet weak var passwordField: UITextField!
     
-    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as
-        UIActivityIndicatorView
-    
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +27,10 @@ class CustomLoginViewController: UIViewController {
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         view.addSubview(self.actInd)
         
-
+        usernameField.becomeFirstResponder()
+        
+        usernameField.delegate = self
+        passwordField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -39,6 +39,17 @@ class CustomLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == usernameField {
+            passwordField.becomeFirstResponder()
+            return true
+        }
+        if count(usernameField.text) > 0 && count(passwordField.text) > 0 {
+            loginAction(self)
+            return true
+        }
+        return false
+    }
 
     /*
     // MARK: - Navigation
@@ -64,19 +75,19 @@ class CustomLoginViewController: UIViewController {
                 
                 self.actInd.stopAnimating()
                 
-                if ((user) != nil) {
+                if (user != nil) {
                     var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
-                    self.performSegueWithIdentifier("HomePage", sender: self)
+//                    self.performSegueWithIdentifier("HomePage", sender: self)
+                    self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                        
+                    })
                 } else {
                     var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
 
                 }
             })
-        
-        
-        
     }
     
     @IBAction func signUpAction(sender: AnyObject) {

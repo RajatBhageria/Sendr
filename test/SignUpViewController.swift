@@ -9,14 +9,13 @@
 import UIKit
 import Parse
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Username: UITextField!
     @IBOutlet weak var Password: UITextField!
     
-    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as
-    UIActivityIndicatorView
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150))
     
 
     override func didReceiveMemoryWarning() {
@@ -33,8 +32,27 @@ class SignUpViewController: UIViewController {
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         view.addSubview(self.actInd)
         
+        Email.becomeFirstResponder()
+        
+        Email.delegate = self
+        Username.delegate = self
+        Password.delegate = self
         
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == Email {
+            Username.becomeFirstResponder()
+            return true
+        } else if textField == Username {
+            Password.becomeFirstResponder()
+            return true
+        } else { // if count(Email.text) > 0 && count(Username.text) > 0 && count(Password.text) > 0 {
+            signUpAction(self)
+            return true
+        }
+//        return false
     }
 
     /*
@@ -55,8 +73,7 @@ class SignUpViewController: UIViewController {
         var password = self.Password.text
         var email = self.Email.text
         
-        if(count(username.utf16) < 4 || count(password.utf16) < 5) {
-            
+        if (count(username) <= 4 || count(password) <= 5) {
             var alert = UIAlertView(title: "Invalid", message: "Username must be grater than 4 and Password must be greater than 5.", delegate: self, cancelButtonTitle: "OK?")
             alert.show()
         } else if (count(email.utf16) < 8) {
@@ -72,19 +89,17 @@ class SignUpViewController: UIViewController {
             newUser.password = password
             newUser.email = email
             
-            
-            
             newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
                 
-                
                 self.actInd.stopAnimating()
-                
-                if((error) != nil) {
-                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
-
-                } else {
+                if (succeed) {
                     var alert = UIAlertView(title: "Success", message: "Signed Up", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
+                    self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                        
+                    })
+                } else {
+                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                 }
         
