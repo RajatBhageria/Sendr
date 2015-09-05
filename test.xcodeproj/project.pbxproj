@@ -17,7 +17,6 @@
 		9126C9E71B6F4693000E72D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9E41B6F4693000E72D9 /* CoreLocation.framework */; };
 		9126C9E91B6F469B000E72D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9E81B6F469B000E72D9 /* QuartzCore.framework */; };
 		9126C9EB1B6F46A6000E72D9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9EA1B6F46A6000E72D9 /* Security.framework */; };
-		9126C9ED1B6F46AC000E72D9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9EC1B6F46AC000E72D9 /* StoreKit.framework */; };
 		9126C9EF1B6F46BC000E72D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9EE1B6F46BC000E72D9 /* SystemConfiguration.framework */; };
 		9126CA291B73469E000E72D9 /* CustomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126CA281B73469E000E72D9 /* CustomLoginViewController.swift */; };
 		9126CA2B1B7346B0000E72D9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */; };
@@ -52,7 +51,6 @@
 		9126C9E41B6F4693000E72D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9126C9E81B6F469B000E72D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9126C9EA1B6F46A6000E72D9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		9126C9EC1B6F46AC000E72D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9126C9EE1B6F46BC000E72D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9126CA281B73469E000E72D9 /* CustomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginViewController.swift; sourceTree = "<group>"; };
 		9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				9126CA2F1B7351DD000E72D9 /* Accounts.framework in Frameworks */,
 				9126CA2D1B7351D3000E72D9 /* Social.framework in Frameworks */,
 				9126C9EF1B6F46BC000E72D9 /* SystemConfiguration.framework in Frameworks */,
-				9126C9ED1B6F46AC000E72D9 /* StoreKit.framework in Frameworks */,
 				9126C9EB1B6F46A6000E72D9 /* Security.framework in Frameworks */,
 				9126C9E91B6F469B000E72D9 /* QuartzCore.framework in Frameworks */,
 				9126C9E51B6F4693000E72D9 /* CFNetwork.framework in Frameworks */,
@@ -142,7 +139,6 @@
 				9126CA2E1B7351DD000E72D9 /* Accounts.framework */,
 				9126CA2C1B7351D3000E72D9 /* Social.framework */,
 				9126C9EE1B6F46BC000E72D9 /* SystemConfiguration.framework */,
-				9126C9EC1B6F46AC000E72D9 /* StoreKit.framework */,
 				9126C9EA1B6F46A6000E72D9 /* Security.framework */,
 				9126C9E81B6F469B000E72D9 /* QuartzCore.framework */,
 				9126C9E21B6F4693000E72D9 /* CFNetwork.framework */,
@@ -224,6 +220,12 @@
 				TargetAttributes = {
 					913450E01B6EB473007F5679 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = N5VGXE44HS;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					913450F51B6EB473007F5679 = {
 						CreatedOnToolsVersion = 6.2;
@@ -405,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -420,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

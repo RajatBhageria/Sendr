@@ -14,33 +14,11 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    let captureSession = AVCaptureSession()
-    
-    // If we find a device we'll store it here for later use
-    var captureDevice : AVCaptureDevice?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        tableView.delegate = self
-//        tableView.dataSource = self
-        
-        // Do any additional setup after loading the view.
-        captureSession.sessionPreset = AVCaptureSessionPresetLow
-        
-        let devices = AVCaptureDevice.devices()
-        
-        // Loop through all the capture devices on this phone
-        for device in devices {
-            // Make sure this particular device supports video
-            if (device.hasMediaType(AVMediaTypeVideo)) {
-                // Finally check the position and confirm we've got the back camera
-                if (device.position == AVCaptureDevicePosition.Back) {
-                    captureDevice = device as? AVCaptureDevice
-                }
-            }
-        }
-        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,10 +31,15 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-        var cell = UITableViewCell(style: .Value1, reuseIdentifier: nil)
-        cell.textLabel?.text = "Cell Text"
-        cell.detailTextLabel?.text = "Value"
+        var cell = tableView.dequeueReusableCellWithIdentifier("editTableViewCell") as! UITableViewCell //UITableViewCell(style: .Value1, reuseIdentifier: nil)
+        
+        if indexPath.row == 0 {
+            let textField = cell.viewWithTag(1) as! UITextField
+            textField.placeholder = "Title"
+        } else if indexPath.row == 1 {
+            let textField = cell.viewWithTag(1) as! UITextField
+            textField.placeholder = "Price"
+        }
         return cell
     }
 
@@ -66,31 +49,6 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
         })
     }
     
-    func configureDevice() {
-        if let device = captureDevice {
-            device.lockForConfiguration(nil)
-            device.focusMode = .Locked
-            device.unlockForConfiguration()
-        }
-        
-    }
-    
-    func beginSession() {
-        
-        configureDevice()
-        
-        var err : NSError? = nil
-        captureSession.addInput(AVCaptureDeviceInput(device: captureDevice, error: &err))
-        
-        if err != nil {
-            println("error: \(err?.localizedDescription)")
-        }
-        
-        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        self.cameraView.layer.addSublayer(previewLayer)
-        previewLayer?.frame = self.cameraView.layer.frame
-        captureSession.startRunning()
-    }
     /*
     // MARK: - Navigation
 
