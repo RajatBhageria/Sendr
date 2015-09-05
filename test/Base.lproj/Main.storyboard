@@ -129,7 +129,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A22-M2-TcD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A22-M2-TcD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -146,8 +146,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A22-M2-TcD" firstAttribute="bottom" secondItem="aa3-1c-Qs0" secondAttribute="top" id="03P-VR-Gqh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="A22-M2-TcD" secondAttribute="trailing" id="oAO-Ag-LQ4"/>
-                            <constraint firstItem="A22-M2-TcD" firstAttribute="leading" secondItem="sO4-kU-PMJ" secondAttribute="leadingMargin" id="t1w-3H-KKN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A22-M2-TcD" secondAttribute="trailing" constant="-16" id="5Rx-ii-0Vc"/>
+                            <constraint firstItem="A22-M2-TcD" firstAttribute="leading" secondItem="sO4-kU-PMJ" secondAttribute="leadingMargin" constant="-16" id="WfA-6p-ryr"/>
                             <constraint firstItem="A22-M2-TcD" firstAttribute="top" secondItem="sO4-kU-PMJ" secondAttribute="top" id="vBO-Zw-iez"/>
                             <constraint firstAttribute="centerX" secondItem="A22-M2-TcD" secondAttribute="centerX" id="w2z-58-vKs"/>
                         </constraints>
