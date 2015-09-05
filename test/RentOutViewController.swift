@@ -72,7 +72,7 @@ class RentOutViewController: UIViewController {
     }
     
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        var anyTouch = touches.first as! UITouch
+        var anyTouch = touches.first as! UITouch    
         var touchPercent = anyTouch.locationInView(self.view).x / screenWidth
         focusTo(Float(touchPercent))
     }
