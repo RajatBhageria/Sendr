@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E931B9B23400001FE5B /* RootTabBarController.swift */; };
+		046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */; };
 		9126C9DD1B6F45E6000E72D9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9DC1B6F45E6000E72D9 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9126C9DF1B6F45F1000E72D9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9DE1B6F45F1000E72D9 /* Bolts.framework */; };
 		9126C9E11B6F4670000E72D9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9E01B6F4670000E72D9 /* AudioToolbox.framework */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		046A1E931B9B23400001FE5B /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTabBarController.swift; path = ../RootTabBarController.swift; sourceTree = "<group>"; };
+		046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 		9126C9DC1B6F45E6000E72D9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
 		9126C9DE1B6F45F1000E72D9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
 		9126C9E01B6F4670000E72D9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 				9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */,
 				9126CA281B73469E000E72D9 /* CustomLoginViewController.swift */,
 				046A1E931B9B23400001FE5B /* RootTabBarController.swift */,
+				046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */,
 				913450EA1B6EB473007F5679 /* Main.storyboard */,
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
 				913450E41B6EB473007F5679 /* Supporting Files */,
@@ -273,6 +276,7 @@
 			files = (
 				9126CA291B73469E000E72D9 /* CustomLoginViewController.swift in Sources */,
 				046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */,
+				046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */,
 				913450E91B6EB473007F5679 /* ViewController.swift in Sources */,
 				9126CA2B1B7346B0000E72D9 /* SignUpViewController.swift in Sources */,
 				913450E71B6EB473007F5679 /* AppDelegate.swift in Sources */,

@@ -120,7 +120,7 @@
         <!--Add New-->
         <scene sceneID="wck-S0-gB9">
             <objects>
-                <viewController id="PZZ-pb-dkG" sceneMemberID="viewController">
+                <viewController id="PZZ-pb-dkG" customClass="AddNewItemViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C8v-bO-txa"/>
                         <viewControllerLayoutGuide type="bottom" id="aa3-1c-Qs0"/>
@@ -129,44 +129,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPq-MV-TSI">
-                                <rect key="frame" x="86" y="91" width="148" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zUx-fi-mZi">
-                                <rect key="frame" x="86" y="129" width="148" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tcf-la-1BC">
-                                <rect key="frame" x="0.0" y="192" width="320" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="463160811.51602101">
-                                    <!--2015-09-05 15:46:51 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3y-Jn-VOq">
-                                <rect key="frame" x="8" y="163" width="40" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XSx-QR-zIx">
-                                <rect key="frame" x="0.0" y="391" width="320" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="463160811.51602101">
-                                    <!--2015-09-05 15:46:51 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxv-Pv-a5v">
-                                <rect key="frame" x="8" y="362" width="18" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A22-M2-TcD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EPc-jw-VWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EPc-jw-VWb" id="CoR-tQ-iOR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A22-M2-TcD" firstAttribute="bottom" secondItem="aa3-1c-Qs0" secondAttribute="top" id="03P-VR-Gqh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A22-M2-TcD" secondAttribute="trailing" id="oAO-Ag-LQ4"/>
+                            <constraint firstItem="A22-M2-TcD" firstAttribute="leading" secondItem="sO4-kU-PMJ" secondAttribute="leadingMargin" id="t1w-3H-KKN"/>
+                            <constraint firstItem="A22-M2-TcD" firstAttribute="top" secondItem="sO4-kU-PMJ" secondAttribute="top" id="vBO-Zw-iez"/>
+                            <constraint firstAttribute="centerX" secondItem="A22-M2-TcD" secondAttribute="centerX" id="w2z-58-vKs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New" id="ucA-7a-IoR"/>
+                    <connections>
+                        <outlet property="tableView" destination="A22-M2-TcD" id="IhI-Ao-zoN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2Z-fa-4M3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
