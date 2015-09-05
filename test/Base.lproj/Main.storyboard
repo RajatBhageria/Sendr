@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cjW-CV-pvD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cjW-CV-pvD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -152,7 +152,14 @@
                             <constraint firstAttribute="centerX" secondItem="A22-M2-TcD" secondAttribute="centerX" id="w2z-58-vKs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New" id="ucA-7a-IoR"/>
+                    <navigationItem key="navigationItem" title="Add New" id="ucA-7a-IoR">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CCT-Ge-KBF">
+                            <connections>
+                                <segue destination="eR4-SB-HOj" kind="push" identifier="Cancel" id="CzF-4o-ipm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="1bt-Gs-ahv"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="A22-M2-TcD" id="IhI-Ao-zoN"/>
                     </connections>
@@ -305,6 +312,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eR4-SB-HOj" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="alv-eM-NgF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ExT-CP-IST">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -324,4 +332,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="CzF-4o-ipm"/>
+    </inferredMetricsTieBreakers>
 </document>
