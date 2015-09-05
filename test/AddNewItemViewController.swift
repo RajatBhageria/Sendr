@@ -33,6 +33,11 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
 
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
+    }
     /*
     // MARK: - Navigation
 
