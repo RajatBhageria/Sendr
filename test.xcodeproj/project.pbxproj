@@ -28,6 +28,7 @@
 		913450F11B6EB473007F5679 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913450EF1B6EB473007F5679 /* LaunchScreen.xib */; };
 		913450FD1B6EB473007F5679 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913450FC1B6EB473007F5679 /* testTests.swift */; };
 		91D021B41B9AAD6F00032C5D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D021B31B9AAD6F00032C5D /* libsqlite3.dylib */; };
+		91D021B61B9B717C00032C5D /* RentOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B51B9B717C00032C5D /* RentOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		913450FB1B6EB473007F5679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913450FC1B6EB473007F5679 /* testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTests.swift; sourceTree = "<group>"; };
 		91D021B31B9AAD6F00032C5D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		91D021B51B9B717C00032C5D /* RentOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				913450EA1B6EB473007F5679 /* Main.storyboard */,
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
 				913450E41B6EB473007F5679 /* Supporting Files */,
+				91D021B51B9B717C00032C5D /* RentOutViewController.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */,
 				046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */,
 				913450E91B6EB473007F5679 /* ViewController.swift in Sources */,
+				91D021B61B9B717C00032C5D /* RentOutViewController.swift in Sources */,
 				9126CA2B1B7346B0000E72D9 /* SignUpViewController.swift in Sources */,
 				913450E71B6EB473007F5679 /* AppDelegate.swift in Sources */,
 			);

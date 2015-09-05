@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>65E55BE0-F3E6-4BDE-90A9-B0732CC14390</string>
+	<string>8D5CEDC7-2D96-4389-BB5A-6AA64BC3D393</string>
 	<key>IDESourceControlProjectName</key>
 	<string>test</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>AE40C3A6B5A997CF7A5D793FC8A1229A93A3CB6E</key>
-		<string>github.com:RajatBhageria/PennAppsXII.git</string>
+		<string>https://github.com/RajatBhageria/PennAppsXII</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>test.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:RajatBhageria/PennAppsXII.git</string>
+	<string>https://github.com/RajatBhageria/PennAppsXII</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>AE40C3A6B5A997CF7A5D793FC8A1229A93A3CB6E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PennAppsXII</string>
+			<string>test</string>
 		</dict>
 	</array>
 </dict>
