@@ -63,6 +63,20 @@ class RentOutViewController: UIViewController {
         
     }
     
+    let screenWidth = UIScreen.mainScreen().bounds.size.width
+
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var anyTouch = touches.first as! UITouch
+        var touchPercent = anyTouch.locationInView(self.view).x / screenWidth
+        focusTo(Float(touchPercent))
+    }
+    
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var anyTouch = touches.first as! UITouch
+        var touchPercent = anyTouch.locationInView(self.view).x / screenWidth
+        focusTo(Float(touchPercent))
+    }
+    
     func beginSession() {
         
         configureDevice()
