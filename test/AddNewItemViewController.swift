@@ -15,6 +15,8 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -24,12 +26,14 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 3
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-//        cell.labelText.text = "Cell Text"
+//        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        var cell = UITableViewCell(style: .Value1, reuseIdentifier: nil)
+        cell.textLabel?.text = "Cell Text"
+        cell.detailTextLabel?.text = "Value"
         return cell
     }
 
