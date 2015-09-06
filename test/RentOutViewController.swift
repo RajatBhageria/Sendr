@@ -13,6 +13,9 @@ class RentOutViewController: UIViewController {
     
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
+    var stillImageOutput: AVCaptureStillImageOutput?
+
+    @IBOutlet weak var capturedImage: UIImageView!
     
     // If we find a device we'll store it here for later use
     var captureDevice : AVCaptureDevice?
@@ -25,6 +28,9 @@ class RentOutViewController: UIViewController {
         
         let devices = AVCaptureDevice.devices()
         
+        stillImageOutput = AVCaptureStillImageOutput()
+        stillImageOutput!.outputSettings = [AVVideoCodecKey: AVVideoCodecJPEG]
+        captureSession.addOutput(stillImageOutput)
         // Loop through all the capture devices on this phone
         for device in devices {
             // Make sure this particular device supports video
@@ -93,5 +99,20 @@ class RentOutViewController: UIViewController {
         previewLayer?.frame = self.view.layer.frame
         captureSession.startRunning()
     }
+    
+    @IBAction func takePicture(sender: AnyObject) {
+        if let videoConnection = stillImageOutput!.connectionWithMediaType(AVMediaTypeVideo) {
+            stillImageOutput?.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler: {(sampleBuffer, error) in
+                var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                var dataProvider = CGDataProviderCreateWithCFData(imageData)
+                var cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, kCGRenderingIntentDefault)
+                var image = UIImage(CGImage: cgImageRef, scale: 1.0, orientation: UIImageOrientation.Right)
+                self.capturedImage.image = image
+            })
+        }
+        
+        
+    }
+    
     
 }
