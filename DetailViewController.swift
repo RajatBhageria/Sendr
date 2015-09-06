@@ -30,6 +30,28 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.title = feedItem!["title"] as? String
+        
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        formatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        
+        if let toDate = feedItem!["toDate"] as? NSDate {
+            let dateString = formatter.stringFromDate(toDate)
+            self.to.text = dateString
+        }
+        if let fromDate = feedItem!["fromDate"] as? NSDate {
+            let dateString = formatter.stringFromDate(fromDate)
+            self.from.text = dateString
+        }
+        
+        if let user = feedItem!["createdBy"] as? PFUser {
+            self.createdBy.text = user["username"]! as! String
+        }
+        
+        if let theNotes = feedItem!["notes"] as? String {
+            self.notes.text = theNotes
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

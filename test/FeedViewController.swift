@@ -20,6 +20,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         fetchNewItems()
     }
     
@@ -32,6 +33,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func fetchNewItems() {
         var query = PFQuery(className:"RentFeed")
+        query.orderByAscending("toDate")
         //        query.cachePolicy = PFCachePolicy.CacheThenNetwork
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
@@ -64,7 +66,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             messageLabel.textColor = UIColor.blackColor()
             messageLabel.numberOfLines = 0
             messageLabel.textAlignment = NSTextAlignment.Center
-            messageLabel.font = UIFont(name: "Palatino-Italic", size: 20)
+            messageLabel.font = UIFont(name: "Avenir-Light", size: 20)
             messageLabel.sizeToFit()
             
             self.tableView.backgroundView = messageLabel
