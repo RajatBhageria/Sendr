@@ -57,34 +57,45 @@ class DetailMeViewController: UIViewController {
     }
     
     @IBAction func acceptOffer(sender: AnyObject) {
+        let client = NSEClient.sharedInstance
+        client.setKey("57800de7eaf96cd51e205923a8be6db4")
+        var accountToAccess:Account
         
         var currentUser = PFUser.currentUser()!
-        var accountId = currentUser.objectId!
+        var accountId = currentUser["bankAccountID"]! as! String
+        
+        let offeredUser = self.offer!["offeredBy"]!
+        offeredUser.fetchIfNeeded()
+        let payeeId = offeredUser["bankAccountID"] as! String
         
         TransferRequest(block: {(builder:TransferRequestBuilder) in
             builder.requestType = HTTPType.POST
             builder.amount = self.topPrice
             builder.transferMedium = TransactionMedium.BALANCE
             builder.description = self.titleLabel.text
-            builder.payeeId = self.objectId
+            builder.payeeId = payeeId
+            builder.accountId = accountId
+            builder.status = "completed"
+//            builder.accountId = accountToAccess.accountId
             
         })?.send(completion: {(result) in
-            TransferRequest(block: {(builder:TransferRequestBuilder) in
-                builder.requestType = HTTPType.GET
-            })?.send(completion: {(result:TransferResult) in
-                var transfers = result.getAllTransfers()
-                
-                if transfers!.count > 0 {
-                    let transferToGet = transfers![transfers!.count-1]
-                    var transferToDelete:Transfer? = nil;
-                    for transfer in transfers! {
-                        if transfer.status == "pending" {
-                            transferToDelete = transfer
-                        }
-                    }
-                    
-                }
-            })
+
+//            TransferRequest(block: {(builder:TransferRequestBuilder) in
+//                builder.requestType = HTTPType.GET
+//            })?.send(completion: {(result:TransferResult) in
+//                var transfers = result.getAllTransfers()
+//                
+//                if transfers!.count > 0 {
+//                    let transferToGet = transfers![transfers!.count-1]
+//                    var transferToDelete:Transfer? = nil;
+//                    for transfer in transfers! {
+//                        if transfer.status == "pending" {
+//                            transferToDelete = transfer
+//                        }
+//                    }
+//                    
+//                }
+//            })
         })
         
     }

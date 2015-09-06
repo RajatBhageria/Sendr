@@ -95,11 +95,21 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 customerId = result.getCustomer()!.customerId
             })
             
+            var accountPostRequest = AccountRequest(block: {(builder:AccountRequestBuilder) in
+                builder.requestType = HTTPType.POST
+                builder.accountType = AccountType.CHECKING
+                builder.balance = 0
+                builder.customerId = customerId
+            })
+            
+            accountPostRequest?.send({(result:AccountResult) in
+                //Should not be any result, should NSLog a message in console saying it was successful
+            })
+        
             newUser.username = username
             newUser.password = password
             newUser.email = email
-            newUser.objectId = customerId
-            
+            newUser["bankCustomerID"] = customerId
             
             newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
                 

@@ -77,6 +77,9 @@ class DetailViewController: UIViewController, CameraDelegate {
             imageFile.saveInBackground()
             parseObject["image"] = imageFile
         }
+        let createdByUser = feedItem!["createdBy"]
+        createdByUser?.fetchIfNeeded()
+        parseObject["requester"] = createdByUser
         parseObject["originalRequest"] = feedItem
         parseObject.saveInBackgroundWithBlock({ (success, error) -> Void in
             if success {
