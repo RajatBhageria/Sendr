@@ -48,6 +48,7 @@
 		04037FD21B9C09A3000148D9 /* CameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037FD11B9C09A3000148D9 /* CameraDelegate.swift */; };
 		04037FD41B9C1910000148D9 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037FD31B9C1910000148D9 /* MeViewController.swift */; };
 		04037FD61B9C3050000148D9 /* DetailMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037FD51B9C3050000148D9 /* DetailMeViewController.swift */; };
+		04037FD81B9C4348000148D9 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04037FD71B9C4348000148D9 /* 10.jpg */; };
 		046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E931B9B23400001FE5B /* RootTabBarController.swift */; };
 		046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */; };
 		9126C9DD1B6F45E6000E72D9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9DC1B6F45E6000E72D9 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -169,6 +170,7 @@
 		04037FD11B9C09A3000148D9 /* CameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraDelegate.swift; sourceTree = "<group>"; };
 		04037FD31B9C1910000148D9 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		04037FD51B9C3050000148D9 /* DetailMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMeViewController.swift; sourceTree = "<group>"; };
+		04037FD71B9C4348000148D9 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		046A1E931B9B23400001FE5B /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTabBarController.swift; path = ../RootTabBarController.swift; sourceTree = "<group>"; };
 		046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 		9126C9DC1B6F45E6000E72D9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				018D894A1B9BE91C00070F56 /* transactionConfirmedViewController.swift */,
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
 				91D021B51B9B717C00032C5D /* RentOutViewController.swift */,
+				04037FD71B9C4348000148D9 /* 10.jpg */,
 				04037FCF1B9BEF86000148D9 /* imgCamera.png */,
 				04037FD11B9C09A3000148D9 /* CameraDelegate.swift */,
 				04037FD31B9C1910000148D9 /* MeViewController.swift */,
@@ -532,6 +535,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04037FD81B9C4348000148D9 /* 10.jpg in Resources */,
 				04037F561B9B9583000148D9 /* XLForm.bundle in Resources */,
 				04037FD01B9BEF86000148D9 /* imgCamera.png in Resources */,
 				913450EC1B6EB473007F5679 /* Main.storyboard in Resources */,

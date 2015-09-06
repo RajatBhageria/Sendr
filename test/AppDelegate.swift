@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Parse.
         Parse.setApplicationId("3Nv0sEKdxShSWBh5gI72btCjsg4FkJprJYC3MIL9",
             clientKey: "TG1HbbLQENqadSuvHTUfJTsrTplqrml7W0AR6Mh2")
-        
+        PFUser.logOut()
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         // Override point for customization after application launch.

@@ -68,6 +68,9 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
         var username = self.usernameField.text
         var password = self.passwordField.text
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "10.jpg")!)
+
+        
             self.actInd.startAnimating()
             
             PFUser.logInWithUsernameInBackground(username, password: password, block: { (user, error) ->
