@@ -18,6 +18,8 @@ class DetailMeViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    var objectId = ""
+    var topPrice = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +37,12 @@ class DetailMeViewController: UIViewController {
             titleLabel.text = originalRequest["title"] as! String
             let price = originalRequest["price"] as! NSNumber
             priceLabel.text = price.stringValue
+            topPrice = price.integerValue
             let user = theOffer["offeredBy"] as! PFUser
             user.fetchIfNeeded()
             let username = user["username"] as! String
             nameLabel.text = username
+            objectId = user.objectId!
         }
         // Do any additional setup after loading the view.
     }
@@ -53,6 +57,40 @@ class DetailMeViewController: UIViewController {
     }
     
     @IBAction func acceptOffer(sender: AnyObject) {
+        
+        
+        var currentUser = PFUser.currentUser()!
+        var accountId = currentUser.objectId!
+        
+        TransferRequest(block: {(builder:TransferRequestBuilder) in
+            builder.requestType = HTTPType.POST
+            builder.amount = self.topPrice
+            builder.transferMedium = TransactionMedium.BALANCE
+            builder.description = self.titleLabel.text
+            builder.payeeId = self.objectId
+            
+        })?.send(completion: {(result) in
+            TransferRequest(block: {(builder:TransferRequestBuilder) in
+                builder.requestType = HTTPType.GET
+            })?.send(completion: {(result:TransferResult) in
+                var transfers = result.getAllTransfers()
+                
+                if transfers!.count > 0 {
+                    let transferToGet = transfers![transfers!.count-1]
+                    var transferToDelete:Transfer? = nil;
+                    for transfer in transfers! {
+                        if transfer.status == "pending" {
+                            transferToDelete = transfer
+                        }
+                    }
+                    
+                }
+            })
+            
+        })
+        
+        
+
     }
 
     /*
