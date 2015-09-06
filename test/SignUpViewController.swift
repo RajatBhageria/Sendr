@@ -87,13 +87,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             
             var newUser = PFUser()
             
-//            CustomerRequest(block: {(builder:CustomerRequestBuilder) in
-//                builder.requestType = HTTPType.POST
-//                builder.firstName = email //firstname is email
-//                builder.lastName = username //lastname is username
-//            })?.send({(result) in
-//                customerId = result.getCustomer()!.customerId
-//            })
+            CustomerRequest(block: {(builder:CustomerRequestBuilder) in
+                builder.requestType = HTTPType.POST
+                builder.firstName = email //firstname is email
+                builder.lastName = username //lastname is username
+            })?.send({(result) in
+                customerId = result.getCustomer()!.customerId
+            })
             
             newUser.username = username
             newUser.password = password
