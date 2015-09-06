@@ -90,6 +90,8 @@
 		91D021B61B9B717C00032C5D /* RentOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B51B9B717C00032C5D /* RentOutViewController.swift */; };
 		91D021B81B9BC53B00032C5D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B71B9BC53B00032C5D /* FeedViewController.swift */; };
 		91DCC9101B9BDD4A0061538F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */; };
+		91DCC9201B9C73220061538F /* blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91DCC91F1B9C73220061538F /* blur.jpg */; };
+		91DCC9241B9C76790061538F /* pict.png in Resources */ = {isa = PBXBuildFile; fileRef = 91DCC9231B9C76790061538F /* pict.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +236,8 @@
 		91D021B51B9B717C00032C5D /* RentOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutViewController.swift; sourceTree = "<group>"; };
 		91D021B71B9BC53B00032C5D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
+		91DCC91F1B9C73220061538F /* blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blur.jpg; sourceTree = "<group>"; };
+		91DCC9231B9C76790061538F /* pict.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pict.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +461,8 @@
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
 				91D021B51B9B717C00032C5D /* RentOutViewController.swift */,
 				04D969E01B9C69AD00CD9DC9 /* logo.jpg */,
+				91DCC9231B9C76790061538F /* pict.png */,
+				91DCC91F1B9C73220061538F /* blur.jpg */,
 				04037FD71B9C4348000148D9 /* 10.jpg */,
 				04037FCF1B9BEF86000148D9 /* imgCamera.png */,
 				04037FD11B9C09A3000148D9 /* CameraDelegate.swift */,
@@ -597,9 +603,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04037FD81B9C4348000148D9 /* 10.jpg in Resources */,
+				91DCC9241B9C76790061538F /* pict.png in Resources */,
 				04D969E91B9C6DEB00CD9DC9 /* Align Justify Filled-32.png in Resources */,
 				04037F561B9B9583000148D9 /* XLForm.bundle in Resources */,
 				04037FD01B9BEF86000148D9 /* imgCamera.png in Resources */,
+				91DCC9201B9C73220061538F /* blur.jpg in Resources */,
 				04D969EB1B9C6E0B00CD9DC9 /* Contacts-32.png in Resources */,
 				913450EC1B6EB473007F5679 /* Main.storyboard in Resources */,
 				913450F11B6EB473007F5679 /* LaunchScreen.xib in Resources */,

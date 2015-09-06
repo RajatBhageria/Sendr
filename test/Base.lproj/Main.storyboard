@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cjW-CV-pvD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cjW-CV-pvD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -659,7 +659,7 @@
             </objects>
             <point key="canvasLocation" x="547" y="-797"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--View Offer-->
         <scene sceneID="DcR-dP-dH9">
             <objects>
                 <viewController id="VlC-2k-jW5" customClass="DetailViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
@@ -672,32 +672,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eby-Ua-ig5">
-                                <rect key="frame" x="117" y="105" width="86" height="21"/>
+                                <rect key="frame" x="117" y="88" width="86" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-TA-XsP">
-                                <rect key="frame" x="16" y="173" width="151" height="21"/>
+                                <rect key="frame" x="85" y="146" width="151" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-dG-sxb">
-                                <rect key="frame" x="16" y="255" width="129" height="212"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-dG-sxb">
+                                <rect key="frame" x="7" y="347" width="300" height="102"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-Tf-LCR">
-                                <rect key="frame" x="98" y="475" width="125" height="36"/>
-                                <state key="normal" title="Take Picture">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePicture:" destination="VlC-2k-jW5" eventType="touchUpInside" id="QGp-wX-2Ir"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-XV-U80">
                                 <rect key="frame" x="16" y="144" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -705,24 +696,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-le-KS4">
-                                <rect key="frame" x="176" y="144" width="23" height="21"/>
+                                <rect key="frame" x="16" y="179" width="23" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU8-VV-suH">
-                                <rect key="frame" x="176" y="173" width="139" height="21"/>
+                                <rect key="frame" x="85" y="181" width="139" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNk-uo-3Lx">
-                                <rect key="frame" x="153" y="255" width="151" height="212"/>
+                                <rect key="frame" x="7" y="215" width="306" height="158"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp2-ru-M9v">
+                                <rect key="frame" x="105" y="444" width="112" height="67"/>
+                                <state key="normal" title="Button" image="pict.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicture:" destination="VlC-2k-jW5" eventType="touchUpInside" id="3pd-3s-fuL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take Picture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcP-yo-885">
+                                <rect key="frame" x="3" y="467" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97647064924240112" green="0.94509810209274292" blue="0.92549026012420654" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zUs-9O-U7u">
+                    <navigationItem key="navigationItem" title="View Offer" id="zUs-9O-U7u">
                         <barButtonItem key="rightBarButtonItem" title="Send Offer" id="cy4-7G-wo7">
                             <connections>
                                 <action selector="sendOffer:" destination="VlC-2k-jW5" id="ltM-k7-9UN"/>
@@ -740,7 +746,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGB-1Z-yZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1317" y="-92"/>
+            <point key="canvasLocation" x="1373" y="-92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pp5-ds-4LB">
@@ -766,6 +772,7 @@
         <image name="Align Justify Filled-32.png" width="32" height="32"/>
         <image name="Contacts-32.png" width="32" height="32"/>
         <image name="imgCamera.png" width="512" height="512"/>
+        <image name="pict.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
