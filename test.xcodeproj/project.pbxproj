@@ -502,9 +502,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		913450E01B6EB473007F5679 /* test */ = {
+		913450E01B6EB473007F5679 /* Sendr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 913451001B6EB474007F5679 /* Build configuration list for PBXNativeTarget "test" */;
+			buildConfigurationList = 913451001B6EB474007F5679 /* Build configuration list for PBXNativeTarget "Sendr" */;
 			buildPhases = (
 				913450DD1B6EB473007F5679 /* Sources */,
 				913450DE1B6EB473007F5679 /* Frameworks */,
@@ -514,7 +514,7 @@
 			);
 			dependencies = (
 			);
-			name = test;
+			name = Sendr;
 			productName = test;
 			productReference = 913450E11B6EB473007F5679 /* test.app */;
 			productType = "com.apple.product-type.application";
@@ -576,7 +576,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				913450E01B6EB473007F5679 /* test */,
+				913450E01B6EB473007F5679 /* Sendr */,
 				913450F51B6EB473007F5679 /* testTests */,
 			);
 		};
@@ -687,7 +687,7 @@
 /* Begin PBXTargetDependency section */
 		913450F81B6EB473007F5679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 913450E01B6EB473007F5679 /* test */;
+			target = 913450E01B6EB473007F5679 /* Sendr */;
 			targetProxy = 913450F71B6EB473007F5679 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -874,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		913451001B6EB474007F5679 /* Build configuration list for PBXNativeTarget "test" */ = {
+		913451001B6EB474007F5679 /* Build configuration list for PBXNativeTarget "Sendr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				913451011B6EB474007F5679 /* Debug */,

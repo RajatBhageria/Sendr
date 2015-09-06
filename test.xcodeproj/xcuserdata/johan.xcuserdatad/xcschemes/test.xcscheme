@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "913450E01B6EB473007F5679"
-               BuildableName = "test.app"
-               BlueprintName = "test"
+               BuildableName = "Sendr.app"
+               BlueprintName = "Sendr"
                ReferencedContainer = "container:test.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "913450E01B6EB473007F5679"
-            BuildableName = "test.app"
-            BlueprintName = "test"
+            BuildableName = "Sendr.app"
+            BlueprintName = "Sendr"
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "913450E01B6EB473007F5679"
-            BuildableName = "test.app"
-            BlueprintName = "test"
+            BuildableName = "Sendr.app"
+            BlueprintName = "Sendr"
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "913450E01B6EB473007F5679"
-            BuildableName = "test.app"
-            BlueprintName = "test"
+            BuildableName = "Sendr.app"
+            BlueprintName = "Sendr"
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
