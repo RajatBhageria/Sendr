@@ -8,7 +8,7 @@
         <!--Login-->
         <scene sceneID="onL-ZG-9DS">
             <objects>
-                <viewController id="kga-bf-VPc" customClass="CustomLoginViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kga-bf-VPc" customClass="CustomLoginViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZWb-iz-muc"/>
                         <viewControllerLayoutGuide type="bottom" id="ROr-xB-uRd"/>
@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-RA-TTC">
-                                <rect key="frame" x="45" y="192" width="231" height="30"/>
+                                <rect key="frame" x="45" y="134" width="231" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlw-hT-FLR">
-                                <rect key="frame" x="45" y="240" width="231" height="30"/>
+                                <rect key="frame" x="45" y="182" width="231" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-eQ-2q3">
-                                <rect key="frame" x="133" y="328" width="55" height="30"/>
+                                <rect key="frame" x="133" y="270" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im4-Nq-8Bq">
-                                <rect key="frame" x="141" y="290" width="38" height="30"/>
+                                <rect key="frame" x="141" y="232" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,7 +48,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="nlw-hT-FLR" secondAttribute="trailing" constant="28" id="5GQ-CK-gyF"/>
-                            <constraint firstItem="vlC-RA-TTC" firstAttribute="top" secondItem="ZWb-iz-muc" secondAttribute="bottom" constant="128" id="65O-pN-on0"/>
+                            <constraint firstItem="vlC-RA-TTC" firstAttribute="top" secondItem="ZWb-iz-muc" secondAttribute="bottom" constant="70" id="65O-pN-on0"/>
                             <constraint firstItem="vlC-RA-TTC" firstAttribute="leading" secondItem="Otv-DI-idJ" secondAttribute="leadingMargin" constant="29" id="7NH-ix-8S6"/>
                             <constraint firstAttribute="centerX" secondItem="vlC-RA-TTC" secondAttribute="centerX" constant="-0.5" id="8go-cx-AXZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vlC-RA-TTC" secondAttribute="trailing" constant="28" id="D3f-Eg-uOy"/>
@@ -75,7 +75,7 @@
         <!--Me-->
         <scene sceneID="H0o-0d-usD">
             <objects>
-                <viewController title="Me" id="jBj-z8-YYp" customClass="MeViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Me" id="jBj-z8-YYp" customClass="MeViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CTH-4n-WY9"/>
                         <viewControllerLayoutGuide type="bottom" id="PEe-oX-gXq"/>
@@ -113,7 +113,7 @@
         <!--Detail Me View Controller-->
         <scene sceneID="4eX-Gp-kYJ">
             <objects>
-                <viewController id="OFG-In-4G3" customClass="DetailMeViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OFG-In-4G3" customClass="DetailMeViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8ld-KJ-IPX"/>
                         <viewControllerLayoutGuide type="bottom" id="OnM-ZV-emM"/>
@@ -183,7 +183,7 @@
         <!--Standing offer-->
         <scene sceneID="Xm6-t4-E5c">
             <objects>
-                <viewController id="2Nr-tI-nFi" customClass="PaymentsView" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Nr-tI-nFi" customClass="PaymentsView" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="42" sectionHeaderHeight="10" sectionFooterHeight="10" id="TbC-YR-RtN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -309,7 +309,7 @@
         <!--Transaction Confirmed View Controller-->
         <scene sceneID="oqJ-xb-El4">
             <objects>
-                <viewController id="ukO-ZQ-m7A" customClass="transactionConfirmedViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ukO-ZQ-m7A" customClass="transactionConfirmedViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PYL-n8-uSU"/>
                         <viewControllerLayoutGuide type="bottom" id="Nli-xc-QeC"/>
@@ -336,7 +336,7 @@
         <!--Home-->
         <scene sceneID="Hvj-Ss-OKg">
             <objects>
-                <viewController title="Home" id="PmV-GP-jtP" customClass="FeedViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="PmV-GP-jtP" customClass="FeedViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F0n-Pn-XSL"/>
                         <viewControllerLayoutGuide type="bottom" id="TXS-As-aeC"/>
@@ -394,7 +394,7 @@
         <!--Offer to rent out-->
         <scene sceneID="LjP-Rz-Y8G">
             <objects>
-                <viewController id="gvk-Ye-jo1" customClass="RentOutViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gvk-Ye-jo1" customClass="RentOutViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w7E-3p-S5u"/>
                         <viewControllerLayoutGuide type="bottom" id="Dh8-BG-1de"/>
@@ -445,7 +445,7 @@
         <!--Add New-->
         <scene sceneID="wck-S0-gB9">
             <objects>
-                <viewController id="PZZ-pb-dkG" customClass="AddNewItemViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PZZ-pb-dkG" customClass="AddNewItemViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C8v-bO-txa"/>
                         <viewControllerLayoutGuide type="bottom" id="aa3-1c-Qs0"/>
@@ -503,7 +503,7 @@
         <!--Add New Item Form View Controller-->
         <scene sceneID="3bG-pZ-4wG">
             <objects>
-                <viewController id="4Nw-R1-tJz" customClass="AddNewItemFormViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Nw-R1-tJz" customClass="AddNewItemFormViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1I2-Wx-fGO"/>
                         <viewControllerLayoutGuide type="bottom" id="fjv-uw-Hnh"/>
@@ -522,7 +522,7 @@
         <!--TabBar-->
         <scene sceneID="EKy-G0-dNX">
             <objects>
-                <tabBarController title="TabBar" id="cjW-CV-pvD" customClass="RootTabBarController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="TabBar" id="cjW-CV-pvD" customClass="RootTabBarController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tDg-a0-DKh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -542,7 +542,7 @@
         <!--Sign Up-->
         <scene sceneID="BNV-et-uVr">
             <objects>
-                <viewController id="i2j-5M-6KI" customClass="SignUpViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i2j-5M-6KI" customClass="SignUpViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7tt-2G-PcK"/>
                         <viewControllerLayoutGuide type="bottom" id="eH0-z4-CzW"/>
@@ -661,7 +661,7 @@
         <!--Detail View Controller-->
         <scene sceneID="DcR-dP-dH9">
             <objects>
-                <viewController id="VlC-2k-jW5" customClass="DetailViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VlC-2k-jW5" customClass="DetailViewController" customModule="Sendr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wTQ-dK-aD7"/>
                         <viewControllerLayoutGuide type="bottom" id="vQd-qT-oAR"/>
