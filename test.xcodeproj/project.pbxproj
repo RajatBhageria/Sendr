@@ -68,6 +68,7 @@
 		91D021B61B9B717C00032C5D /* RentOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B51B9B717C00032C5D /* RentOutViewController.swift */; };
 		91D021B81B9BC53B00032C5D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B71B9BC53B00032C5D /* FeedViewController.swift */; };
 		91DCC9101B9BDD4A0061538F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */; };
+		91DCC9121B9BEB200061538F /* imgCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 91DCC9111B9BEB200061538F /* imgCamera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +188,7 @@
 		91D021B51B9B717C00032C5D /* RentOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutViewController.swift; sourceTree = "<group>"; };
 		91D021B71B9BC53B00032C5D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
+		91DCC9111B9BEB200061538F /* imgCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imgCamera.png; path = ../../../imgCamera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +377,7 @@
 				913450E61B6EB473007F5679 /* AppDelegate.swift */,
 				913450E81B6EB473007F5679 /* ViewController.swift */,
 				9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */,
+				91DCC9111B9BEB200061538F /* imgCamera.png */,
 				9126CA281B73469E000E72D9 /* CustomLoginViewController.swift */,
 				91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */,
 				046A1E931B9B23400001FE5B /* RootTabBarController.swift */,
@@ -517,6 +520,7 @@
 			files = (
 				04037F561B9B9583000148D9 /* XLForm.bundle in Resources */,
 				913450EC1B6EB473007F5679 /* Main.storyboard in Resources */,
+				91DCC9121B9BEB200061538F /* imgCamera.png in Resources */,
 				913450F11B6EB473007F5679 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
