@@ -20,7 +20,7 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "10.jpg")!)
         self.actInd.center = self.view.center
         
         self.actInd.hidesWhenStopped = true
@@ -68,29 +68,26 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
         var username = self.usernameField.text
         var password = self.passwordField.text
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "10.jpg")!)
-
+        self.actInd.startAnimating()
         
-            self.actInd.startAnimating()
+        PFUser.logInWithUsernameInBackground(username, password: password, block: { (user, error) ->
+            Void in
             
-            PFUser.logInWithUsernameInBackground(username, password: password, block: { (user, error) ->
-                Void in
-                
-                self.actInd.stopAnimating()
-                
-                if (user != nil) {
-                    var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
+            self.actInd.stopAnimating()
+            
+            if (user != nil) {
+                var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
 //                    self.performSegueWithIdentifier("HomePage", sender: self)
-                    self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                        
-                    })
-                } else {
-                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
+                self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    
+                })
+            } else {
+                var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
 
-                }
-            })
+            }
+        })
     }
     
     @IBAction func signUpAction(sender: AnyObject) {

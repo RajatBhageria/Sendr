@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-RA-TTC">
-                                <rect key="frame" x="45" y="92" width="231" height="30"/>
+                                <rect key="frame" x="45" y="192" width="231" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlw-hT-FLR">
-                                <rect key="frame" x="45" y="140" width="231" height="30"/>
+                                <rect key="frame" x="45" y="240" width="231" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-eQ-2q3">
-                                <rect key="frame" x="133" y="228" width="55" height="30"/>
+                                <rect key="frame" x="133" y="328" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im4-Nq-8Bq">
-                                <rect key="frame" x="141" y="190" width="38" height="30"/>
+                                <rect key="frame" x="141" y="290" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -46,10 +46,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="nlw-hT-FLR" secondAttribute="trailing" constant="28" id="5GQ-CK-gyF"/>
-                            <constraint firstItem="vlC-RA-TTC" firstAttribute="top" secondItem="ZWb-iz-muc" secondAttribute="bottom" constant="28" id="65O-pN-on0"/>
+                            <constraint firstItem="vlC-RA-TTC" firstAttribute="top" secondItem="ZWb-iz-muc" secondAttribute="bottom" constant="128" id="65O-pN-on0"/>
                             <constraint firstItem="vlC-RA-TTC" firstAttribute="leading" secondItem="Otv-DI-idJ" secondAttribute="leadingMargin" constant="29" id="7NH-ix-8S6"/>
                             <constraint firstAttribute="centerX" secondItem="vlC-RA-TTC" secondAttribute="centerX" constant="-0.5" id="8go-cx-AXZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vlC-RA-TTC" secondAttribute="trailing" constant="28" id="D3f-Eg-uOy"/>

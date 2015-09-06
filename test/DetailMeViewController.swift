@@ -58,7 +58,6 @@ class DetailMeViewController: UIViewController {
     
     @IBAction func acceptOffer(sender: AnyObject) {
         
-        
         var currentUser = PFUser.currentUser()!
         var accountId = currentUser.objectId!
         
@@ -86,11 +85,8 @@ class DetailMeViewController: UIViewController {
                     
                 }
             })
-            
         })
         
-        
-
     }
 
     /*
