@@ -21,7 +21,6 @@ class DetailViewController: UIViewController {
     
     @IBAction func takePicture(sender: AnyObject) {
         self.performSegueWithIdentifier("cameraSegue", sender: self)
-
     }
     
     override func viewDidLoad() {
@@ -30,7 +29,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.title = feedItem!["title"] as! String
+        self.title = feedItem!["title"] as? String
     }
 
     override func didReceiveMemoryWarning() {

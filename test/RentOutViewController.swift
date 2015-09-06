@@ -66,7 +66,6 @@ class RentOutViewController: UIViewController {
             device.focusMode = .Locked
             device.unlockForConfiguration()
         }
-        
     }
     
     let screenWidth = UIScreen.mainScreen().bounds.size.width
@@ -83,6 +82,8 @@ class RentOutViewController: UIViewController {
         focusTo(Float(touchPercent))
     }
     
+    @IBOutlet weak var cameraView: UIView!
+    
     func beginSession() {
         
         configureDevice()
@@ -95,8 +96,8 @@ class RentOutViewController: UIViewController {
         }
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        self.view.layer.addSublayer(previewLayer)
-        previewLayer?.frame = self.view.layer.frame
+        self.cameraView.layer.addSublayer(previewLayer)
+        previewLayer?.frame = self.cameraView.layer.frame
         captureSession.startRunning()
     }
     

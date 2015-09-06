@@ -286,13 +286,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSk-bx-JUQ">
-                                                    <rect key="frame" x="8" y="11" width="128" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="232" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG8-4g-y5F">
-                                                    <rect key="frame" x="214" y="11" width="98" height="21"/>
+                                                    <rect key="frame" x="255" y="11" width="57" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -306,11 +306,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="nz3-NW-Nbe">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="xuF-Jn-K7r">
-                            <connections>
-                                <segue destination="gvk-Ye-jo1" kind="push" id="G7e-ko-w7u"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="HKe-ci-4DT">
                             <connections>
                                 <segue destination="eR4-SB-HOj" kind="modal" identifier="addNew" id="Qds-Pq-tzq"/>
@@ -319,7 +314,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="7DC-kO-E87" id="DKK-vk-ylg"/>
-                        <segue destination="gvk-Ye-jo1" kind="push" id="LKf-76-gPc"/>
                         <segue destination="VlC-2k-jW5" kind="push" identifier="detailItemSegue" id="5Fd-6X-naD"/>
                     </connections>
                 </viewController>
@@ -339,30 +333,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-Af-jfg">
-                                <rect key="frame" x="109" y="404" width="102" height="107"/>
-                                <state key="normal" title="Button" image="imgCamera.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePicture:" destination="gvk-Ye-jo1" eventType="touchUpInside" id="Y37-Hl-qei"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-qF-QM4">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZjE-w0-Bpp">
-                                        <rect key="frame" x="28" y="72" width="123" height="91"/>
+                                        <rect key="frame" x="28" y="136" width="123" height="91"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ub-qO-Dlr">
+                                <rect key="frame" x="106" y="431" width="107" height="96"/>
+                                <state key="normal" title="Button" image="imgCamera.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicture:" destination="gvk-Ye-jo1" eventType="touchUpInside" id="Zof-zw-RLx"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Offer to rent out" id="pK4-RG-gt6"/>
                     <connections>
-                        <outlet property="captureImage" destination="ZjE-w0-Bpp" id="4X2-P7-Ot0"/>
+                        <outlet property="cameraView" destination="1Pa-qF-QM4" id="Mw2-4b-p2Z"/>
+                        <outlet property="capturedImage" destination="ZjE-w0-Bpp" id="UOC-nt-PiQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIZ-Dh-giK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -649,7 +644,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zUs-9O-U7u">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Fvq-lx-mQz"/>
                         <barButtonItem key="rightBarButtonItem" title="Send Offer" id="cy4-7G-wo7"/>
                     </navigationItem>
                     <connections>
@@ -658,6 +652,7 @@
                         <outlet property="imageView" destination="ZNk-uo-3Lx" id="udz-70-6n1"/>
                         <outlet property="notes" destination="wIp-dG-sxb" id="nPW-Ja-LA4"/>
                         <outlet property="to" destination="KU8-VV-suH" id="gJ2-oo-5Sv"/>
+                        <segue destination="gvk-Ye-jo1" kind="modal" identifier="cameraSegue" id="yve-z2-YLe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGB-1Z-yZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -692,7 +687,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="LKf-76-gPc"/>
-    </inferredMetricsTieBreakers>
 </document>

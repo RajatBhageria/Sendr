@@ -38,6 +38,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Return the number of sections.
         if (feedItems != nil) {
             self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+            self.tableView.backgroundView = nil
             return feedItems!.count
         } else {
             // Display a message when the table is empty
@@ -63,7 +64,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let priceLabel = cell.viewWithTag(2) as! UILabel
         let item = feedItems![indexPath.row]
         titleLabel.text = (item["title"]! as! String)
-        priceLabel.text = "$20"
+        if let price = item["price"] {
+            priceLabel.text = "$\(price)"
+        } else {
+            priceLabel.text = ""
+        }
         
         return cell
     }

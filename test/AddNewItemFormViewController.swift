@@ -76,9 +76,10 @@ class AddNewItemFormViewController: XLFormViewController {
                         parseObject["location"] = PFGeoPoint(latitude: lat, longitude: lng)
                         parseObject["createdBy"] = PFUser.currentUser()
                         parseObject["title"] = formValues["title"]
+                        parseObject["price"] = formValues["price"]
                         parseObject["notes"] = formValues["notes"]
                         parseObject["toDate"] = formValues["toDate"]
-                        parseObject["toDate"] = formValues["fromDate"]
+                        parseObject["fromDate"] = formValues["fromDate"]
                         parseObject.saveInBackgroundWithBlock({ (success, error) -> Void in
                             if success {
                                 self.dismissViewControllerAnimated(true, completion: nil)
@@ -105,6 +106,7 @@ class AddNewItemFormViewController: XLFormViewController {
             if validationStatus.rowDescriptor!.tag == Tags.DateInline.rawValue ||
                 validationStatus.rowDescriptor!.tag == "title" ||
                 validationStatus.rowDescriptor!.tag == "notes" ||
+                validationStatus.rowDescriptor!.tag == "price" ||
                 validationStatus.rowDescriptor!.tag == "location" {
                     if let cell = self.tableView.cellForRowAtIndexPath(self.form.indexPathOfFormRow(validationStatus.rowDescriptor)!) {
                         self.animateCell(cell)
@@ -149,6 +151,12 @@ class AddNewItemFormViewController: XLFormViewController {
         // Location
         row = XLFormRowDescriptor(tag: "location", rowType: XLFormRowDescriptorTypeText)
         row.cellConfigAtConfigure["textField.placeholder"] = "Location"
+        row.required = true
+        section.addFormRow(row)
+
+        // Price
+        row = XLFormRowDescriptor(tag: "price", rowType: XLFormRowDescriptorTypeDecimal)
+        row.cellConfigAtConfigure["textField.placeholder"] = "Price"
         row.required = true
         section.addFormRow(row)
         
