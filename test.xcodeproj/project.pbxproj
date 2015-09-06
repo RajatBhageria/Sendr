@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018D89491B9BE8C900070F56 /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89481B9BE8C900070F56 /* PaymentsView.swift */; };
+		018D894B1B9BE91C00070F56 /* transactionConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D894A1B9BE91C00070F56 /* transactionConfirmedViewController.swift */; };
+		018D895C1B9BE9F000070F56 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D894C1B9BE9EF00070F56 /* Account.swift */; };
+		018D895D1B9BE9F000070F56 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D894D1B9BE9EF00070F56 /* Address.swift */; };
+		018D895E1B9BE9F000070F56 /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D894E1B9BE9EF00070F56 /* ATM.swift */; };
+		018D895F1B9BE9F000070F56 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D894F1B9BE9EF00070F56 /* Bill.swift */; };
+		018D89601B9BE9F000070F56 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89501B9BE9EF00070F56 /* Branch.swift */; };
+		018D89611B9BE9F000070F56 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89511B9BE9EF00070F56 /* Customer.swift */; };
+		018D89621B9BE9F000070F56 /* Deposit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89521B9BE9EF00070F56 /* Deposit.swift */; };
+		018D89631B9BE9F000070F56 /* EnterpriseRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89531B9BE9EF00070F56 /* EnterpriseRequests.swift */; };
+		018D89641B9BE9F000070F56 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 018D89541B9BE9EF00070F56 /* Info.plist */; };
+		018D89651B9BE9F000070F56 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89551B9BE9EF00070F56 /* Merchant.swift */; };
+		018D89661B9BE9F000070F56 /* NSEClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89571B9BE9EF00070F56 /* NSEClient.swift */; };
+		018D89671B9BE9F000070F56 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89581B9BE9EF00070F56 /* Purchase.swift */; };
+		018D89681B9BE9F000070F56 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D89591B9BE9EF00070F56 /* Transaction.swift */; };
+		018D89691B9BE9F000070F56 /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D895A1B9BE9F000070F56 /* Transfer.swift */; };
+		018D896A1B9BE9F000070F56 /* Withdrawal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D895B1B9BE9F000070F56 /* Withdrawal.swift */; };
 		04037F561B9B9583000148D9 /* XLForm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04037F551B9B9583000148D9 /* XLForm.bundle */; };
 		04037FA91B9B95AA000148D9 /* XLFormBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04037F5A1B9B95AA000148D9 /* XLFormBaseCell.m */; };
 		04037FAA1B9B95AA000148D9 /* XLFormButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04037F5C1B9B95AA000148D9 /* XLFormButtonCell.m */; };
@@ -81,6 +98,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018D89481B9BE8C900070F56 /* PaymentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentsView.swift; path = ../../../Desktop/PennAppsXII/test/PaymentsView.swift; sourceTree = "<group>"; };
+		018D894A1B9BE91C00070F56 /* transactionConfirmedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = transactionConfirmedViewController.swift; path = ../../../Desktop/PennAppsXII/test/transactionConfirmedViewController.swift; sourceTree = "<group>"; };
+		018D894C1B9BE9EF00070F56 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Account.swift"; sourceTree = "<group>"; };
+		018D894D1B9BE9EF00070F56 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Address.swift"; sourceTree = "<group>"; };
+		018D894E1B9BE9EF00070F56 /* ATM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATM.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/ATM.swift"; sourceTree = "<group>"; };
+		018D894F1B9BE9EF00070F56 /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bill.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Bill.swift"; sourceTree = "<group>"; };
+		018D89501B9BE9EF00070F56 /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Branch.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Branch.swift"; sourceTree = "<group>"; };
+		018D89511B9BE9EF00070F56 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Customer.swift"; sourceTree = "<group>"; };
+		018D89521B9BE9EF00070F56 /* Deposit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deposit.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Deposit.swift"; sourceTree = "<group>"; };
+		018D89531B9BE9EF00070F56 /* EnterpriseRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterpriseRequests.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/EnterpriseRequests.swift"; sourceTree = "<group>"; };
+		018D89541B9BE9EF00070F56 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Info.plist"; sourceTree = "<group>"; };
+		018D89551B9BE9EF00070F56 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Merchant.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Merchant.swift"; sourceTree = "<group>"; };
+		018D89561B9BE9EF00070F56 /* Nessie-iOS-Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Nessie-iOS-Wrapper.h"; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Nessie-iOS-Wrapper.h"; sourceTree = "<group>"; };
+		018D89571B9BE9EF00070F56 /* NSEClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSEClient.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/NSEClient.swift"; sourceTree = "<group>"; };
+		018D89581B9BE9EF00070F56 /* Purchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Purchase.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Purchase.swift"; sourceTree = "<group>"; };
+		018D89591B9BE9EF00070F56 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Transaction.swift"; sourceTree = "<group>"; };
+		018D895A1B9BE9F000070F56 /* Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transfer.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Transfer.swift"; sourceTree = "<group>"; };
+		018D895B1B9BE9F000070F56 /* Withdrawal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Withdrawal.swift; path = "../../../Downloads/nessie-ios-wrapper-master/Nessie-iOS-Wrapper/Withdrawal.swift"; sourceTree = "<group>"; };
 		04037F551B9B9583000148D9 /* XLForm.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XLForm.bundle; sourceTree = "<group>"; };
 		04037F591B9B95AA000148D9 /* XLFormBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFormBaseCell.h; sourceTree = "<group>"; };
 		04037F5A1B9B95AA000148D9 /* XLFormBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFormBaseCell.m; sourceTree = "<group>"; };
@@ -219,6 +254,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		018D896B1B9BE9FB00070F56 /* Nessie-iOS Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				018D894C1B9BE9EF00070F56 /* Account.swift */,
+				018D894D1B9BE9EF00070F56 /* Address.swift */,
+				018D894E1B9BE9EF00070F56 /* ATM.swift */,
+				018D894F1B9BE9EF00070F56 /* Bill.swift */,
+				018D89501B9BE9EF00070F56 /* Branch.swift */,
+				018D89511B9BE9EF00070F56 /* Customer.swift */,
+				018D89521B9BE9EF00070F56 /* Deposit.swift */,
+				018D89531B9BE9EF00070F56 /* EnterpriseRequests.swift */,
+				018D89541B9BE9EF00070F56 /* Info.plist */,
+				018D89551B9BE9EF00070F56 /* Merchant.swift */,
+				018D89561B9BE9EF00070F56 /* Nessie-iOS-Wrapper.h */,
+				018D89571B9BE9EF00070F56 /* NSEClient.swift */,
+				018D89581B9BE9EF00070F56 /* Purchase.swift */,
+				018D89591B9BE9EF00070F56 /* Transaction.swift */,
+				018D895A1B9BE9F000070F56 /* Transfer.swift */,
+				018D895B1B9BE9F000070F56 /* Withdrawal.swift */,
+				913450E41B6EB473007F5679 /* Supporting Files */,
+			);
+			name = "Nessie-iOS Wrapper";
+			sourceTree = "<group>";
+		};
 		04037F571B9B95AA000148D9 /* XL */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,17 +432,19 @@
 			children = (
 				91D021B71B9BC53B00032C5D /* FeedViewController.swift */,
 				913450E61B6EB473007F5679 /* AppDelegate.swift */,
+				018D89481B9BE8C900070F56 /* PaymentsView.swift */,
 				913450E81B6EB473007F5679 /* ViewController.swift */,
-				9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */,
 				9126CA281B73469E000E72D9 /* CustomLoginViewController.swift */,
 				91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */,
 				046A1E931B9B23400001FE5B /* RootTabBarController.swift */,
 				046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */,
 				04037FCD1B9B97AF000148D9 /* AddNewItemFormViewController.swift */,
+				9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */,
 				913450EA1B6EB473007F5679 /* Main.storyboard */,
+				018D894A1B9BE91C00070F56 /* transactionConfirmedViewController.swift */,
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
 				91D021B51B9B717C00032C5D /* RentOutViewController.swift */,
-				913450E41B6EB473007F5679 /* Supporting Files */,
+				018D896B1B9BE9FB00070F56 /* Nessie-iOS Wrapper */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -515,6 +576,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018D89641B9BE9F000070F56 /* Info.plist in Resources */,
 				04037F561B9B9583000148D9 /* XLForm.bundle in Resources */,
 				913450EC1B6EB473007F5679 /* Main.storyboard in Resources */,
 				913450F11B6EB473007F5679 /* LaunchScreen.xib in Resources */,
@@ -536,26 +598,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				04037FBB1B9B95AA000148D9 /* XLFormDescriptor.m in Sources */,
+				018D89661B9BE9F000070F56 /* NSEClient.swift in Sources */,
 				04037FBC1B9B95AA000148D9 /* XLFormRowDescriptor.m in Sources */,
 				04037FC91B9B95AA000148D9 /* XLFormValidationStatus.m in Sources */,
 				04037FBF1B9B95AA000148D9 /* NSExpression+XLFormAdditions.m in Sources */,
 				04037FAB1B9B95AA000148D9 /* XLFormCheckCell.m in Sources */,
+				018D895C1B9BE9F000070F56 /* Account.swift in Sources */,
 				9126CA291B73469E000E72D9 /* CustomLoginViewController.swift in Sources */,
+				018D89631B9BE9F000070F56 /* EnterpriseRequests.swift in Sources */,
 				04037FAF1B9B95AA000148D9 /* XLFormLeftRightSelectorCell.m in Sources */,
 				04037FB81B9B95AA000148D9 /* XLFormOptionsObject.m in Sources */,
 				046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */,
 				91D021B81B9BC53B00032C5D /* FeedViewController.swift in Sources */,
 				04037FB21B9B95AA000148D9 /* XLFormSelectorCell.m in Sources */,
+				018D89621B9BE9F000070F56 /* Deposit.swift in Sources */,
 				04037FB11B9B95AA000148D9 /* XLFormSegmentedCell.m in Sources */,
 				04037FC41B9B95AA000148D9 /* XLFormRightDetailCell.m in Sources */,
 				04037FAA1B9B95AA000148D9 /* XLFormButtonCell.m in Sources */,
+				018D89681B9BE9F000070F56 /* Transaction.swift in Sources */,
 				04037FC51B9B95AA000148D9 /* XLFormRightImageButton.m in Sources */,
+				018D895F1B9BE9F000070F56 /* Bill.swift in Sources */,
 				04037FCA1B9B95AA000148D9 /* XLFormValidator.m in Sources */,
 				04037FC21B9B95AA000148D9 /* NSString+XLFormAdditions.m in Sources */,
 				04037FB51B9B95AA000148D9 /* XLFormSwitchCell.m in Sources */,
 				04037FC11B9B95AA000148D9 /* NSPredicate+XLFormAdditions.m in Sources */,
 				046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */,
 				04037FB61B9B95AA000148D9 /* XLFormTextFieldCell.m in Sources */,
+				018D89491B9BE8C900070F56 /* PaymentsView.swift in Sources */,
 				04037FB91B9B95AA000148D9 /* XLFormOptionsViewController.m in Sources */,
 				04037FB01B9B95AA000148D9 /* XLFormPickerCell.m in Sources */,
 				04037FC31B9B95AA000148D9 /* UIView+XLFormAdditions.m in Sources */,
@@ -567,18 +636,27 @@
 				04037FBA1B9B95AA000148D9 /* XLFormViewController.m in Sources */,
 				04037FB31B9B95AA000148D9 /* XLFormSliderCell.m in Sources */,
 				04037FAD1B9B95AA000148D9 /* XLFormDatePickerCell.m in Sources */,
+				018D895D1B9BE9F000070F56 /* Address.swift in Sources */,
 				04037FAC1B9B95AA000148D9 /* XLFormDateCell.m in Sources */,
 				04037FC61B9B95AA000148D9 /* XLFormRowNavigationAccessoryView.m in Sources */,
 				04037FB71B9B95AA000148D9 /* XLFormTextViewCell.m in Sources */,
+				018D89671B9BE9F000070F56 /* Purchase.swift in Sources */,
 				913450E91B6EB473007F5679 /* ViewController.swift in Sources */,
+				018D89611B9BE9F000070F56 /* Customer.swift in Sources */,
+				018D89691B9BE9F000070F56 /* Transfer.swift in Sources */,
+				018D89651B9BE9F000070F56 /* Merchant.swift in Sources */,
 				04037FC01B9B95AA000148D9 /* NSObject+XLFormAdditions.m in Sources */,
 				91D021B61B9B717C00032C5D /* RentOutViewController.swift in Sources */,
 				9126CA2B1B7346B0000E72D9 /* SignUpViewController.swift in Sources */,
+				018D896A1B9BE9F000070F56 /* Withdrawal.swift in Sources */,
 				04037FBD1B9B95AA000148D9 /* XLFormSectionDescriptor.m in Sources */,
 				04037FBE1B9B95AA000148D9 /* NSArray+XLFormAdditions.m in Sources */,
+				018D89601B9BE9F000070F56 /* Branch.swift in Sources */,
+				018D894B1B9BE91C00070F56 /* transactionConfirmedViewController.swift in Sources */,
 				04037FA91B9B95AA000148D9 /* XLFormBaseCell.m in Sources */,
 				04037FCE1B9B97AF000148D9 /* AddNewItemFormViewController.swift in Sources */,
 				04037FB41B9B95AA000148D9 /* XLFormStepCounterCell.m in Sources */,
+				018D895E1B9BE9F000070F56 /* ATM.swift in Sources */,
 				913450E71B6EB473007F5679 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

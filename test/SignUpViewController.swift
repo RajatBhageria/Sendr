@@ -72,6 +72,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         var username = self.Username.text
         var password = self.Password.text
         var email = self.Email.text
+        var customerId = ""
+
         
         if (count(username) <= 4 || count(password) <= 5) {
             var alert = UIAlertView(title: "Invalid", message: "Username must be grater than 4 and Password must be greater than 5.", delegate: self, cancelButtonTitle: "OK?")
@@ -85,9 +87,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             
             var newUser = PFUser()
             
+            CustomerRequest(block: {(builder:CustomerRequestBuilder) in
+                builder.requestType = HTTPType.POST
+                builder.firstName = email //firstname is email
+                builder.lastName = username //lastname is username
+            })?.send({(result) in
+                customerId = result.getCustomer()!.customerId
+            })
+            
             newUser.username = username
             newUser.password = password
             newUser.email = email
+            newUser.objectId = customerId
+            
             
             newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
                 
