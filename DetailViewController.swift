@@ -14,20 +14,15 @@ class DetailViewController: UIViewController {
     var feedItem: PFObject?
     
     @IBOutlet weak var createdBy: UILabel!
-    
     @IBOutlet weak var from: UILabel!
-    
     @IBOutlet weak var to: UILabel!
-    
     @IBOutlet weak var notes: UILabel!
-    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func takePicture(sender: AnyObject) {
-        self.performSegueWithIdentifier("RentOutViewController", sender: self)
+        self.performSegueWithIdentifier("cameraSegue", sender: self)
 
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
