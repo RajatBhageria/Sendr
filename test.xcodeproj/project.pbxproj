@@ -67,6 +67,7 @@
 		91D021B41B9AAD6F00032C5D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D021B31B9AAD6F00032C5D /* libsqlite3.dylib */; };
 		91D021B61B9B717C00032C5D /* RentOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B51B9B717C00032C5D /* RentOutViewController.swift */; };
 		91D021B81B9BC53B00032C5D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D021B71B9BC53B00032C5D /* FeedViewController.swift */; };
+		91DCC9101B9BDD4A0061538F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,7 @@
 		91D021B31B9AAD6F00032C5D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		91D021B51B9B717C00032C5D /* RentOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutViewController.swift; sourceTree = "<group>"; };
 		91D021B71B9BC53B00032C5D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +376,7 @@
 				913450E81B6EB473007F5679 /* ViewController.swift */,
 				9126CA2A1B7346B0000E72D9 /* SignUpViewController.swift */,
 				9126CA281B73469E000E72D9 /* CustomLoginViewController.swift */,
+				91DCC90F1B9BDD4A0061538F /* DetailViewController.swift */,
 				046A1E931B9B23400001FE5B /* RootTabBarController.swift */,
 				046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */,
 				04037FCD1B9B97AF000148D9 /* AddNewItemFormViewController.swift */,
@@ -559,6 +562,7 @@
 				04037FC81B9B95AA000148D9 /* XLFormRegexValidator.m in Sources */,
 				04037FC71B9B95AA000148D9 /* XLFormTextView.m in Sources */,
 				04037FCB1B9B95AA000148D9 /* XLForm.m in Sources */,
+				91DCC9101B9BDD4A0061538F /* DetailViewController.swift in Sources */,
 				04037FAE1B9B95AA000148D9 /* XLFormInlineSelectorCell.m in Sources */,
 				04037FBA1B9B95AA000148D9 /* XLFormViewController.m in Sources */,
 				04037FB31B9B95AA000148D9 /* XLFormSliderCell.m in Sources */,

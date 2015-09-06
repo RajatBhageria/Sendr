@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBd-lB-6JT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005" y="-37"/>
+            <point key="canvasLocation" x="965" y="-797"/>
         </scene>
         <!--Me-->
         <scene sceneID="H0o-0d-usD">
@@ -186,6 +186,7 @@
                     <connections>
                         <outlet property="tableView" destination="7DC-kO-E87" id="DKK-vk-ylg"/>
                         <segue destination="gvk-Ye-jo1" kind="push" id="LKf-76-gPc"/>
+                        <segue destination="VlC-2k-jW5" kind="push" identifier="detailItemSegue" id="5Fd-6X-naD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uey-S7-g9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfc-hb-tFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1424" y="-37"/>
+            <point key="canvasLocation" x="1429" y="-805"/>
         </scene>
         <!--Home-->
         <scene sceneID="m2i-4V-pmu">
@@ -431,7 +432,86 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scl-qW-3eR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555" y="-37"/>
+            <point key="canvasLocation" x="547" y="-797"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="DcR-dP-dH9">
+            <objects>
+                <viewController id="VlC-2k-jW5" customClass="DetailViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTQ-dK-aD7"/>
+                        <viewControllerLayoutGuide type="bottom" id="vQd-qT-oAR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jav-UH-VwR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eby-Ua-ig5">
+                                <rect key="frame" x="117" y="105" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU8-VV-suH">
+                                <rect key="frame" x="212" y="144" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-TA-XsP">
+                                <rect key="frame" x="69" y="143" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-dG-sxb">
+                                <rect key="frame" x="16" y="229" width="288" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-Tf-LCR">
+                                <rect key="frame" x="98" y="475" width="125" height="36"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicture:" destination="VlC-2k-jW5" eventType="touchUpInside" id="QGp-wX-2Ir"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-XV-U80">
+                                <rect key="frame" x="16" y="144" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-le-KS4">
+                                <rect key="frame" x="181" y="144" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNk-uo-3Lx">
+                                <rect key="frame" x="16" y="293" width="288" height="174"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zUs-9O-U7u">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Fvq-lx-mQz"/>
+                        <barButtonItem key="rightBarButtonItem" title="Send Offer" id="cy4-7G-wo7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="createdBy" destination="eby-Ua-ig5" id="2yh-cP-pLt"/>
+                        <outlet property="from" destination="RpQ-TA-XsP" id="FMT-rS-NJ4"/>
+                        <outlet property="imageView" destination="ZNk-uo-3Lx" id="udz-70-6n1"/>
+                        <outlet property="notes" destination="wIp-dG-sxb" id="nPW-Ja-LA4"/>
+                        <outlet property="to" destination="KU8-VV-suH" id="gJ2-oo-5Sv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGB-1Z-yZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pp5-ds-4LB">

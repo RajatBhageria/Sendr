@@ -43,13 +43,21 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let titleLabel = cell.viewWithTag(1) as! UILabel
         let priceLabel = cell.viewWithTag(2) as! UILabel
         let item = feedItems![indexPath.row]
-        titleLabel.text = item["title"]! as! String
+        titleLabel.text = (item["title"]! as! String)
         priceLabel.text = "$20"
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("detailItemSegue", sender: self)
         println("You selected cell #\(indexPath.row)!")
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "detailItemSegue" {
+            var yourNextViewController = (segue.destinationViewController as! DetailViewController)
+            yourNextViewController.feedItem = feedItems![tableView.indexPathForSelectedRow()!.row]
+        }
     }
 }
