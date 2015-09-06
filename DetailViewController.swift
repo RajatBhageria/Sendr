@@ -57,13 +57,32 @@ class DetailViewController: UIViewController, CameraDelegate {
         
         if let user = feedItem!["createdBy"] as? PFUser {
             user.fetchIfNeeded()
-            self.createdBy.text = user["username"]! as! String
+            self.createdBy.text = user["username"]! as? String
         }
         
         if let theNotes = feedItem!["notes"] as? String {
             self.notes.text = theNotes
         }
-        
+    }
+    
+    @IBAction func sendOffer(sender: AnyObject) {
+        var parseObject = PFObject(className: "Offers")
+        parseObject["offeredBy"] = PFUser.currentUser()
+        let imageData = UIImagePNGRepresentation(imageView.image)
+        let imageFile = PFFile(data: imageData)
+        imageFile.saveInBackground()
+        parseObject["image"] = imageFile
+        parseObject["originalRequest"] = feedItem
+        parseObject.saveInBackgroundWithBlock({ (success, error) -> Void in
+            if success {
+                let alertView = UIAlertView(title: "Offer was successfully send", message: ":)", delegate: self, cancelButtonTitle: "OK")
+                alertView.show()
+                self.navigationController?.popViewControllerAnimated(true)
+            } else {
+                let alertView = UIAlertView(title: "Didn’t succeed sending the offer", message: ":(", delegate: self, cancelButtonTitle: "OK")
+                alertView.show()
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {

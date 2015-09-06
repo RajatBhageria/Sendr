@@ -88,8 +88,6 @@ class AddNewItemFormViewController: XLFormViewController {
                                 alertView.show()
                             }
                         })
-                        
-                        
                     }
                 }
             }

@@ -76,7 +76,7 @@
         <!--Me-->
         <scene sceneID="H0o-0d-usD">
             <objects>
-                <viewController title="Me" id="jBj-z8-YYp" sceneMemberID="viewController">
+                <viewController title="Me" id="jBj-z8-YYp" customClass="MeViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CTH-4n-WY9"/>
                         <viewControllerLayoutGuide type="bottom" id="PEe-oX-gXq"/>
@@ -103,6 +103,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Me" id="6qu-X5-7uy"/>
                     <connections>
+                        <outlet property="tableView" destination="6js-WC-L9G" id="yEl-Hv-9lE"/>
                         <segue destination="2Nr-tI-nFi" kind="push" id="pOv-HW-Oji"/>
                     </connections>
                 </viewController>
@@ -652,7 +653,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zUs-9O-U7u">
-                        <barButtonItem key="rightBarButtonItem" title="Send Offer" id="cy4-7G-wo7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Send Offer" id="cy4-7G-wo7">
+                            <connections>
+                                <action selector="sendOffer:" destination="VlC-2k-jW5" id="ltM-k7-9UN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="createdBy" destination="eby-Ua-ig5" id="2yh-cP-pLt"/>
