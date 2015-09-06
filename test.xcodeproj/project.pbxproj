@@ -45,6 +45,7 @@
 		04037FCB1B9B95AA000148D9 /* XLForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 04037FA81B9B95AA000148D9 /* XLForm.m */; };
 		04037FCE1B9B97AF000148D9 /* AddNewItemFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037FCD1B9B97AF000148D9 /* AddNewItemFormViewController.swift */; };
 		04037FD01B9BEF86000148D9 /* imgCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 04037FCF1B9BEF86000148D9 /* imgCamera.png */; };
+		04037FD21B9C09A3000148D9 /* CameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037FD11B9C09A3000148D9 /* CameraDelegate.swift */; };
 		046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E931B9B23400001FE5B /* RootTabBarController.swift */; };
 		046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */; };
 		9126C9DD1B6F45E6000E72D9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9DC1B6F45E6000E72D9 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -163,6 +164,7 @@
 		04037FCC1B9B9639000148D9 /* Lendr-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Lendr-bridging-header.h"; path = "../Lendr-bridging-header.h"; sourceTree = "<group>"; };
 		04037FCD1B9B97AF000148D9 /* AddNewItemFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemFormViewController.swift; sourceTree = "<group>"; };
 		04037FCF1B9BEF86000148D9 /* imgCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgCamera.png; sourceTree = "<group>"; };
+		04037FD11B9C09A3000148D9 /* CameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraDelegate.swift; sourceTree = "<group>"; };
 		046A1E931B9B23400001FE5B /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTabBarController.swift; path = ../RootTabBarController.swift; sourceTree = "<group>"; };
 		046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 		9126C9DC1B6F45E6000E72D9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
 				91D021B51B9B717C00032C5D /* RentOutViewController.swift */,
 				04037FCF1B9BEF86000148D9 /* imgCamera.png */,
+				04037FD11B9C09A3000148D9 /* CameraDelegate.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				04037FAE1B9B95AA000148D9 /* XLFormInlineSelectorCell.m in Sources */,
 				04037FBA1B9B95AA000148D9 /* XLFormViewController.m in Sources */,
 				04037FB31B9B95AA000148D9 /* XLFormSliderCell.m in Sources */,
+				04037FD21B9C09A3000148D9 /* CameraDelegate.swift in Sources */,
 				04037FAD1B9B95AA000148D9 /* XLFormDatePickerCell.m in Sources */,
 				04037FAC1B9B95AA000148D9 /* XLFormDateCell.m in Sources */,
 				04037FC61B9B95AA000148D9 /* XLFormRowNavigationAccessoryView.m in Sources */,

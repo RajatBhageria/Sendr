@@ -14,6 +14,8 @@ class RentOutViewController: UIViewController {
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
     var stillImageOutput: AVCaptureStillImageOutput?
+    
+    var delegate: CameraDelegate?
 
     @IBOutlet weak var capturedImage: UIImageView!
     
@@ -108,7 +110,9 @@ class RentOutViewController: UIViewController {
                 var dataProvider = CGDataProviderCreateWithCFData(imageData)
                 var cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, kCGRenderingIntentDefault)
                 var image = UIImage(CGImage: cgImageRef, scale: 1.0, orientation: UIImageOrientation.Right)
+                self.delegate?.pictureWasTaken(image!)
                 self.capturedImage.image = image
+                self.dismissViewControllerAnimated(true, completion: nil)
             })
         }
         

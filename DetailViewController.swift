@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, CameraDelegate {
 
     var feedItem: PFObject?
     
@@ -21,6 +21,17 @@ class DetailViewController: UIViewController {
     
     @IBAction func takePicture(sender: AnyObject) {
         self.performSegueWithIdentifier("cameraSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "cameraSegue" {
+            let rentOutVC = segue.destinationViewController as! RentOutViewController
+            rentOutVC.delegate = self
+        }
+    }
+    
+    func pictureWasTaken(image: UIImage) {
+        imageView.image = image
     }
     
     override func viewDidLoad() {
@@ -45,6 +56,7 @@ class DetailViewController: UIViewController {
         }
         
         if let user = feedItem!["createdBy"] as? PFUser {
+            user.fetchIfNeeded()
             self.createdBy.text = user["username"]! as! String
         }
         

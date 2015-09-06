@@ -333,7 +333,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-qF-QM4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-qF-QM4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZjE-w0-Bpp">
@@ -353,6 +353,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dh8-BG-1de" firstAttribute="top" secondItem="1Pa-qF-QM4" secondAttribute="bottom" id="1NP-8W-7wZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Pa-qF-QM4" secondAttribute="trailing" constant="-16" id="1l9-qr-WUI"/>
+                            <constraint firstItem="1Pa-qF-QM4" firstAttribute="top" secondItem="w7E-3p-S5u" secondAttribute="bottom" constant="-20" id="3He-zU-C7X"/>
+                            <constraint firstItem="1Pa-qF-QM4" firstAttribute="top" secondItem="w7E-3p-S5u" secondAttribute="bottom" constant="-20" id="Ken-HD-r5S"/>
+                            <constraint firstItem="1Pa-qF-QM4" firstAttribute="top" secondItem="w7E-3p-S5u" secondAttribute="bottom" constant="-20" id="gJo-Bt-95a"/>
+                            <constraint firstItem="1Pa-qF-QM4" firstAttribute="leading" secondItem="ekk-gn-nks" secondAttribute="leadingMargin" constant="-16" id="kXl-dY-5Tf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Offer to rent out" id="pK4-RG-gt6"/>
                     <connections>
@@ -604,8 +612,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-dG-sxb">
-                                <rect key="frame" x="16" y="229" width="288" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-dG-sxb">
+                                <rect key="frame" x="16" y="255" width="129" height="212"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -632,7 +640,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNk-uo-3Lx">
-                                <rect key="frame" x="16" y="293" width="288" height="174"/>
+                                <rect key="frame" x="153" y="255" width="151" height="212"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU8-VV-suH">
                                 <rect key="frame" x="176" y="173" width="139" height="21"/>
