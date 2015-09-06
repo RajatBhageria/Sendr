@@ -376,8 +376,8 @@
 				04037FCD1B9B97AF000148D9 /* AddNewItemFormViewController.swift */,
 				913450EA1B6EB473007F5679 /* Main.storyboard */,
 				913450EF1B6EB473007F5679 /* LaunchScreen.xib */,
-				913450E41B6EB473007F5679 /* Supporting Files */,
 				91D021B51B9B717C00032C5D /* RentOutViewController.swift */,
+				913450E41B6EB473007F5679 /* Supporting Files */,
 			);
 			path = test;
 			sourceTree = "<group>";
