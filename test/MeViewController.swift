@@ -72,6 +72,17 @@ class MeViewController: UIViewController, UITableViewDataSource, UITableViewDele
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("detailMeSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "detailMeSegue" {
+            let destinationVC = segue.destinationViewController as! DetailMeViewController
+            destinationVC.offer = self.offers![tableView.indexPathForSelectedRow()!.row]
+        }
+    }
 
     /*
     // MARK: - Navigation

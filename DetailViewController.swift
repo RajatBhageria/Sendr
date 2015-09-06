@@ -68,10 +68,12 @@ class DetailViewController: UIViewController, CameraDelegate {
     @IBAction func sendOffer(sender: AnyObject) {
         var parseObject = PFObject(className: "Offers")
         parseObject["offeredBy"] = PFUser.currentUser()
-        let imageData = UIImagePNGRepresentation(imageView.image)
-        let imageFile = PFFile(data: imageData)
-        imageFile.saveInBackground()
-        parseObject["image"] = imageFile
+        
+        if let imageData = UIImagePNGRepresentation(imageView.image) {
+            let imageFile = PFFile(data: imageData)
+            imageFile.saveInBackground()
+            parseObject["image"] = imageFile
+        }
         parseObject["originalRequest"] = feedItem
         parseObject.saveInBackgroundWithBlock({ (success, error) -> Void in
             if success {

@@ -104,12 +104,82 @@
                     <navigationItem key="navigationItem" title="Me" id="6qu-X5-7uy"/>
                     <connections>
                         <outlet property="tableView" destination="6js-WC-L9G" id="yEl-Hv-9lE"/>
-                        <segue destination="2Nr-tI-nFi" kind="push" id="pOv-HW-Oji"/>
+                        <segue destination="OFG-In-4G3" kind="push" identifier="detailMeSegue" id="N0f-D0-LVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dxc-6O-WEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005" y="1333"/>
+        </scene>
+        <!--Detail Me View Controller-->
+        <scene sceneID="4eX-Gp-kYJ">
+            <objects>
+                <viewController id="OFG-In-4G3" customClass="DetailMeViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8ld-KJ-IPX"/>
+                        <viewControllerLayoutGuide type="bottom" id="OnM-ZV-emM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gku-5w-Lc8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-9D-2IY">
+                                <rect key="frame" x="69" y="72" width="182" height="219"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFX-s4-Z0z">
+                                <rect key="frame" x="16" y="299" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBz-hl-aL8">
+                                <rect key="frame" x="16" y="328" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Price]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH9-8C-Otd">
+                                <rect key="frame" x="78" y="328" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Offered by:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7r-PV-PCd">
+                                <rect key="frame" x="16" y="357" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Name]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z3-a8-SAl">
+                                <rect key="frame" x="110" y="357" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jth-Um-sGZ">
+                                <rect key="frame" x="117" y="395" width="87" height="30"/>
+                                <state key="normal" title="Accept Offer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptOffer:" destination="OFG-In-4G3" eventType="touchUpInside" id="g3s-lr-2QE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sts-CS-U33"/>
+                    <connections>
+                        <outlet property="imageView" destination="hQR-9D-2IY" id="d3b-Wl-H5w"/>
+                        <outlet property="nameLabel" destination="6Z3-a8-SAl" id="kNr-4i-0H6"/>
+                        <outlet property="priceLabel" destination="gH9-8C-Otd" id="fyT-I9-IJM"/>
+                        <outlet property="titleLabel" destination="BFX-s4-Z0z" id="Hk7-n9-a7E"/>
+                        <segue destination="2Nr-tI-nFi" kind="push" identifier="acceptOfferSegue" id="k2x-lw-Bap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jF-WX-F7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="1762"/>
         </scene>
         <!--Standing offer-->
         <scene sceneID="Xm6-t4-E5c">
@@ -235,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mZ-1U-QfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="1722"/>
+            <point key="canvasLocation" x="1770" y="1762"/>
         </scene>
         <!--Transaction Confirmed View Controller-->
         <scene sceneID="oqJ-xb-El4">
@@ -262,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Si0-F5-RZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925" y="1737"/>
+            <point key="canvasLocation" x="2279" y="1777"/>
         </scene>
         <!--Home-->
         <scene sceneID="Hvj-Ss-OKg">
