@@ -12,11 +12,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
+        self.tableView.sendSubviewToBack(refreshControl)
     }
     
     override func viewWillAppear(animated: Bool) {
+        fetchNewItems()
+    }
+    
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        fetchNewItems()
+        self.tableView.reloadData()
+        self.tableView.layoutIfNeeded()
+        refreshControl.endRefreshing()
+    }
+    
+    func fetchNewItems() {
         var query = PFQuery(className:"RentFeed")
-//        query.cachePolicy = PFCachePolicy.CacheThenNetwork
+        //        query.cachePolicy = PFCachePolicy.CacheThenNetwork
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
