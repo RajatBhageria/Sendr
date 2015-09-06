@@ -35,6 +35,7 @@ class DetailMeViewController: UIViewController {
             let originalRequest = theOffer["originalRequest"]!
             originalRequest.fetchIfNeeded()
             titleLabel.text = originalRequest["title"] as! String
+            self.title = originalRequest["title"] as! String
             let price = originalRequest["price"] as! NSNumber
             priceLabel.text = price.stringValue
             topPrice = price.integerValue

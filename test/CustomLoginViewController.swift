@@ -76,12 +76,11 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
             self.actInd.stopAnimating()
             
             if (user != nil) {
-                var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
-                alert.show()
+//                var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+//                alert.show()
 //                    self.performSegueWithIdentifier("HomePage", sender: self)
-                self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                    
-                })
+                
+                self.dismissViewControllerAnimated(true, completion: nil)
             } else {
                 var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                 alert.show()

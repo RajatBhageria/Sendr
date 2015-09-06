@@ -88,6 +88,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             priceLabel.text = ""
         }
         
+        if indexPath.row % 2 != 0 {
+            cell.backgroundColor = UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1.0)
+        }
+        
         return cell
     }
     

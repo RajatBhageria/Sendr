@@ -66,6 +66,8 @@
 		046A1E941B9B23400001FE5B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E931B9B23400001FE5B /* RootTabBarController.swift */; };
 		046A1E961B9B4EAA0001FE5B /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */; };
 		04D969E11B9C69AD00CD9DC9 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04D969E01B9C69AD00CD9DC9 /* logo.jpg */; };
+		04D969E91B9C6DEB00CD9DC9 /* Align Justify Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D969E81B9C6DEB00CD9DC9 /* Align Justify Filled-32.png */; };
+		04D969EB1B9C6E0B00CD9DC9 /* Contacts-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D969EA1B9C6E0B00CD9DC9 /* Contacts-32.png */; };
 		9126C9DD1B6F45E6000E72D9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9DC1B6F45E6000E72D9 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9126C9DF1B6F45F1000E72D9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9DE1B6F45F1000E72D9 /* Bolts.framework */; };
 		9126C9E11B6F4670000E72D9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126C9E01B6F4670000E72D9 /* AudioToolbox.framework */; };
@@ -204,6 +206,8 @@
 		046A1E931B9B23400001FE5B /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTabBarController.swift; path = ../RootTabBarController.swift; sourceTree = "<group>"; };
 		046A1E951B9B4EAA0001FE5B /* AddNewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 		04D969E01B9C69AD00CD9DC9 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		04D969E81B9C6DEB00CD9DC9 /* Align Justify Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Align Justify Filled-32.png"; sourceTree = "<group>"; };
+		04D969EA1B9C6E0B00CD9DC9 /* Contacts-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-32.png"; sourceTree = "<group>"; };
 		9126C9DC1B6F45E6000E72D9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
 		9126C9DE1B6F45F1000E72D9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
 		9126C9E01B6F4670000E72D9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -458,6 +462,8 @@
 				04037FD11B9C09A3000148D9 /* CameraDelegate.swift */,
 				04037FD31B9C1910000148D9 /* MeViewController.swift */,
 				04037FD51B9C3050000148D9 /* DetailMeViewController.swift */,
+				04D969EA1B9C6E0B00CD9DC9 /* Contacts-32.png */,
+				04D969E81B9C6DEB00CD9DC9 /* Align Justify Filled-32.png */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -591,8 +597,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04037FD81B9C4348000148D9 /* 10.jpg in Resources */,
+				04D969E91B9C6DEB00CD9DC9 /* Align Justify Filled-32.png in Resources */,
 				04037F561B9B9583000148D9 /* XLForm.bundle in Resources */,
 				04037FD01B9BEF86000148D9 /* imgCamera.png in Resources */,
+				04D969EB1B9C6E0B00CD9DC9 /* Contacts-32.png in Resources */,
 				913450EC1B6EB473007F5679 /* Main.storyboard in Resources */,
 				913450F11B6EB473007F5679 /* LaunchScreen.xib in Resources */,
 				04D969E11B9C69AD00CD9DC9 /* logo.jpg in Resources */,

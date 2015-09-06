@@ -606,7 +606,7 @@
         <scene sceneID="m2i-4V-pmu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FxY-SP-V7S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="q0r-wc-KyN"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Align Justify Filled-32.png" id="q0r-wc-KyN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rSh-pA-vuH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -625,7 +625,7 @@
         <scene sceneID="lZ9-bA-xQK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6RM-3S-HQI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Me" id="SxQ-QU-mQi"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="Contacts-32.png" id="SxQ-QU-mQi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3WO-pY-Tif">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -762,6 +762,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Align Justify Filled-32.png" width="32" height="32"/>
+        <image name="Contacts-32.png" width="32" height="32"/>
         <image name="imgCamera.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
